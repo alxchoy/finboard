@@ -1,0 +1,42 @@
+{
+  "name": "finboard",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev": "nx run-many --target=serve --all --parallel",
+    "lint": "",
+    "format": "",
+    "typecheck": "",
+    "build": "",
+    "preview": "",
+    "test": "",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@module-federation/vite": "^1.15.1",
+    "@nx/eslint": "^22.7.0",
+    "@nx/eslint-plugin": "^22.7.0",
+    "@nx/js": "^22.7.0",
+    "@nx/react": "^22.7.0",
+    "@nx/vite": "^22.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "nx": "^22.7.0",
+    "prettier": "^3.8.3",
+    "typescript-eslint": "^8.59.1"
+  }
+}

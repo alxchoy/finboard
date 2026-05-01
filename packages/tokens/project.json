@@ -1,0 +1,5 @@
+{
+  "name": "@finboard/tokens",
+  "projectType": "library",
+  "tags": ["scope:tokens"]
+}

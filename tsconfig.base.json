@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "rootDir": ".",
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "es2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@finboard/ui": ["packages/ui/src/index.ts"],
+      "@finboard/tokens": ["packages/tokens/src/index.ts"],
+      "@finboard/state": ["packages/state/src/index.ts"],
+      "@finboard/utils": ["packages/utils/src/index.ts"],
+      "@finboard/api-client": ["packages/api-client/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "tmp"]
+}

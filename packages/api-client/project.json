@@ -1,0 +1,5 @@
+{
+  "name": "@finboard/api-client",
+  "projectType": "library",
+  "tags": ["scope:api"]
+}

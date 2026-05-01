@@ -1,0 +1,25 @@
+{
+  "name": "@finboard/analytics",
+  "projectType": "application",
+  "tags": ["scope:app"],
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "@finboard/analytics:build"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/analytics"
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview",
+      "options": {
+        "buildTarget": "@finboard/analytics:build"
+      }
+    }
+  }
+}

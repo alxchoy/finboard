@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.nx/cache
+.nx/workspace-data
+coverage/
+*.local
+.env
+.env.*
+!.eenv.example
+.__mf__temp/
+.vite/
+*.tsbuildinfo
+.vscode
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+{
+  "name": "@finboard/market",
+  "projectType": "application",
+  "tags": ["scope:app"],
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "@finboard/market:build"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/market"
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview",
+      "options": {
+        "buildTarget": "@finboard/market:build"
+      }
+    }
+  }
+}

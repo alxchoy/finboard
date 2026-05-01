@@ -1,0 +1,25 @@
+{
+  "name": "@finboard/portfolio",
+  "projectType": "application",
+  "tags": ["scope:app"],
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "@finboard/portfolio:build"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/portfolio"
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview",
+      "options": {
+        "buildTarget": "@finboard/portfolio:build"
+      }
+    }
+  }
+}

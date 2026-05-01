@@ -1,0 +1,5 @@
+{
+  "name": "@finboard/utils",
+  "projectType": "library",
+  "tags": ["scope:utils"]
+}

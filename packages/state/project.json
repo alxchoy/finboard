@@ -1,0 +1,5 @@
+{
+  "name": "@finboard/state",
+  "projectType": "library",
+  "tags": ["scope:state"]
+}

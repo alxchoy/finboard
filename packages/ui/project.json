@@ -1,0 +1,5 @@
+{
+  "name": "@finboard/ui",
+  "projectType": "library",
+  "tags": ["scope:ui"]
+}
