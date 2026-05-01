@@ -6,6 +6,9 @@ export default defineConfig({
   root: __dirname,
   build: {
     target: 'esnext',
+    modulePreload: false,
+    minify: false,
+    cssCodeSplit: false,
     outDir: '../../dist/apps/market',
   },
   plugins: [
@@ -22,7 +25,7 @@ export default defineConfig({
     }),
   ],
   optimizeDeps: {
-    include: ['react', 'react-dom'],
+    exclude: ['react', 'react-dom'],
   },
   server: { port: 3002 },
 });

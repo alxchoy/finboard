@@ -6,16 +6,32 @@ export default defineConfig({
   root: __dirname,
   build: {
     target: 'esnext',
+    modulePreload: false,
+    minify: false,
+    cssCodeSplit: false,
     outDir: '../../dist/apps/shell',
   },
   plugins: [
     react(),
     federation({
       name: 'shell',
+      manifest: true,
       remotes: {
-        portfolio: 'http://localhost:3001/remoteEntry.js',
-        market: 'http://localhost:3002/remoteEntry.js',
-        analytics: 'http://localhost:3003/remoteEntry.js',
+        portfolio: {
+          type: 'module',
+          name: 'portfolio',
+          entry: 'http://localhost:3001/remoteEntry.js',
+        },
+        market: {
+          type: 'module',
+          name: 'market',
+          entry: 'http://localhost:3002/remoteEntry.js',
+        },
+        analytics: {
+          type: 'module',
+          name: 'analytics',
+          entry: 'http://localhost:3003/remoteEntry.js',
+        },
       },
       shared: {
         react: { singleton: true, requiredVersion: '^18' },
@@ -25,7 +41,7 @@ export default defineConfig({
     }),
   ],
   optimizeDeps: {
-    include: ['react', 'react-dom'],
+    exclude: ['react', 'react-dom'],
   },
   server: { port: 3000 },
 });

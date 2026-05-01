@@ -6,12 +6,16 @@ export default defineConfig({
   root: __dirname,
   build: {
     target: 'esnext',
+    modulePreload: false,
+    minify: false,
+    cssCodeSplit: false,
     outDir: '../../dist/apps/portfolio',
   },
   plugins: [
     react(),
     federation({
       name: 'portfolio',
+      manifest: true,
       filename: 'remoteEntry.js',
       exposes: { './Portfolio': './src/App.tsx' },
       shared: {
@@ -22,7 +26,7 @@ export default defineConfig({
     }),
   ],
   optimizeDeps: {
-    include: ['react', 'react-dom'],
+    exclude: ['react', 'react-dom'],
   },
   server: { port: 3001 },
 });
