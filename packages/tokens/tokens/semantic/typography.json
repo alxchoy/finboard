@@ -1,0 +1,25 @@
+{
+  "typography": {
+    "fontFamily": {
+      "body": { "value": "{fontFamily.sans}" },
+      "heading": { "value": "{fontFamily.sans}" },
+      "code": { "value": "{fontFamily.mono}" },
+      "numeric": { "value": "{fontFamily.mono}" }
+    },
+    "fontSize": {
+      "caption": { "value": "{fontSize.xs}" },
+      "body": { "value": "{fontSize.sm}" },
+      "bodyLg": { "value": "{fontSize.base}" },
+      "heading": { "value": "{fontSize.lg}" },
+      "headingLg": { "value": "{fontSize.xl}" },
+      "display": { "value": "{fontSize.2xl}" },
+      "displayLg": { "value": "{fontSize.3xl}" }
+    },
+    "fontWeight": {
+      "body": { "value": "{fontWeight.normal}" },
+      "emphasis": { "value": "{fontWeight.medium}" },
+      "heading": { "value": "{fontWeight.semibold}" },
+      "strong": { "value": "{fontWeight.bold}" }
+    }
+  }
+}

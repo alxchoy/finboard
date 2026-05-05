@@ -1,0 +1,23 @@
+{
+  "component": {
+    "input": {
+      "background": {
+        "default": { "value": "{color.background.default}" },
+        "disabled": { "value": "{color.background.muted}" }
+      },
+      "text": {
+        "default": { "value": "{color.text.default}" },
+        "placeholder": { "value": "{color.text.subtle}" },
+        "disabled": { "value": "{color.text.subtle}" }
+      },
+      "border": {
+        "default": { "value": "{color.border.default}" },
+        "hover": { "value": "{color.border.strong}" },
+        "focus": { "value": "{color.interactive.focus}" },
+        "error": { "value": "{color.feedback.negative}" }
+      },
+      "radius": { "value": "{radius.md}" },
+      "padding": { "value": "{spacing.2} {spacing.3}" }
+    }
+  }
+}

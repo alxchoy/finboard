@@ -1,0 +1,34 @@
+{
+  "component": {
+    "button": {
+      "background": {
+        "primary": { "value": "{color.interactive.primary}" },
+        "primaryHover": { "value": "{color.interactive.primaryHover}" },
+        "primaryActive": { "value": "{color.interactive.primaryActive}" },
+        "secondary": { "value": "{color.background.muted}" },
+        "secondaryHover": { "value": "{color.background.subtle}" },
+        "ghost": { "value": "transparent" },
+        "ghostHover": { "value": "{color.background.muted}" },
+        "danger": { "value": "{color.feedback.negative}" },
+        "disabled": { "value": "{color.interactive.disabled}" }
+      },
+      "text": {
+        "primary": { "value": "{color.text.onInteractive}" },
+        "secondary": { "value": "{color.text.default}" },
+        "ghost": { "value": "{color.text.default}" },
+        "danger": { "value": "{color.text.onInteractive}" },
+        "disabled": { "value": "{color.text.subtle}" }
+      },
+      "border": {
+        "secondary": { "value": "{color.border.default}" },
+        "focus": { "value": "{color.interactive.focus}" }
+      },
+      "radius": { "value": "{radius.md}" },
+      "padding": {
+        "sm": { "value": "{spacing.1} {spacing.3}" },
+        "md": { "value": "{spacing.2} {spacing.4}" },
+        "lg": { "value": "{spacing.3} {spacing.6}" }
+      }
+    }
+  }
+}

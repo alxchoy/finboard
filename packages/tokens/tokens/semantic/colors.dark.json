@@ -1,0 +1,41 @@
+{
+  "colorDark": {
+    "background": {
+      "default": { "value": "{neutral.950}" },
+      "subtle": { "value": "{neutral.900}" },
+      "muted": { "value": "{neutral.800}" },
+      "inverse": { "value": "{neutral.0}" },
+      "overlay": { "value": "{neutral.950}" }
+    },
+    "text": {
+      "default": { "value": "{neutral.50}" },
+      "muted": { "value": "{neutral.400}" },
+      "subtle": { "value": "{neutral.500}" },
+      "inverse": { "value": "{neutral.900}" },
+      "positive": { "value": "{green.400}" },
+      "negative": { "value": "{red.400}" },
+      "warning": { "value": "{amber.400}" },
+      "onInteractive": { "value": "{white}" }
+    },
+    "border": {
+      "default": { "value": "{neutral.700}" },
+      "strong": { "value": "{neutral.600}" },
+      "subtle": { "value": "{neutral.800}" }
+    },
+    "interactive": {
+      "primary": { "value": "{blue.400}" },
+      "primaryHover": { "value": "{blue.300}" },
+      "primaryActive": { "value": "{blue.200}" },
+      "focus": { "value": "{blue.300}" },
+      "disabled": { "value": "{neutral.700}" }
+    },
+    "feedback": {
+      "positive": { "value": "{green.400}" },
+      "positiveSubtle": { "value": "{green.950}" },
+      "negative": { "value": "{red.400}" },
+      "negativeSubtle": { "value": "{red.950}" },
+      "warning": { "value": "{amber.400}" },
+      "warningSubtle": { "value": "{amber.900}" }
+    }
+  }
+}

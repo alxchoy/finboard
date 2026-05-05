@@ -1,0 +1,24 @@
+{
+  "component": {
+    "badge": {
+      "positive": {
+        "background": { "value": "{color.feedback.positiveSubtle}" },
+        "text": { "value": "{color.feedback.positive}" }
+      },
+      "negative": {
+        "background": { "value": "{color.feedback.negativeSubtle}" },
+        "text": { "value": "{color.feedback.negative}" }
+      },
+      "warning": {
+        "background": { "value": "{color.feedback.warningSubtle}" },
+        "text": { "value": "{color.feedback.warning}" }
+      },
+      "neutral": {
+        "background": { "value": "{color.background.muted}" },
+        "text": { "value": "{color.text.muted}" }
+      },
+      "radius": { "value": "{radius.full}" },
+      "padding": { "value": "{spacing.1} {spacing.2}" }
+    }
+  }
+}
