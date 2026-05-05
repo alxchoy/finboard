@@ -1,6 +1,6 @@
 import StyleDictionary from 'style-dictionary';
 
-const sd = new StyleDictionary({
+const styleDictionary = new StyleDictionary({
   log: {
     verbosity: 'verbose'
   },
@@ -28,7 +28,7 @@ const sd = new StyleDictionary({
     css_semantic: {
       transformGroup: "css",
       prefix: 'fin',
-      buildPath: 'dist/css',
+      buildPath: 'dist/css/',
       files: [
         {
           destination: 'semantic.css',
@@ -36,11 +36,26 @@ const sd = new StyleDictionary({
           filter: (token) => token.filePath.includes('semantic')
         }
       ]
+    },
+    css_component: {
+      transformGroup: "css",
+      prefix: "fin",
+      buildPath: "dist/css/",
+      files: [
+        {
+          destination: "component.css",
+          format: "css/variables",
+          filter: (token) => token.filePath.includes('component'),
+          options: {
+            outputReferences: true
+          }
+        }
+      ]
     }
   }
 });
 
-sd.registerFormat({
+styleDictionary.registerFormat({
   name: 'css/variables-merge',
   format: ({ dictionary, options }) => {
     const formatValue = (value) => {
@@ -58,7 +73,7 @@ sd.registerFormat({
         token => {
           const { name } = token;
           const cssVariableName = `var(--fin-${formatValue(token.original.value)})`;
-          return `--${name}: ${cssVariableName};`;
+          return `  --${name}: ${cssVariableName};`;
         }
       )
       .join('\n');
@@ -70,13 +85,15 @@ sd.registerFormat({
           const { name } = token;
           const nameProp = name.replace(/-dark-/g, '-')
           const cssVariableName = `var(--fin-${formatValue(token.original.value)})`;
-          return `--${nameProp}: ${cssVariableName};`;
+          return `  --${nameProp}: ${cssVariableName};`;
         }
       )
       .join('\n');
 
-    return `:root {\n${semanticLight}\n}\n\n[data-theme="dark"] {\n${semanticDark}\n}`;
+    const headerComment = `/**\n* Do not edit directly, this file was auto-generated.\n*/`;
+
+    return `${headerComment}\n\n:root {\n${semanticLight}\n}\n\n[data-theme="dark"] {\n${semanticDark}\n}`;
   }
 })
 
-await sd.buildAllPlatforms()
+await styleDictionary.buildAllPlatforms()
