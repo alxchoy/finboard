@@ -1,0 +1,42 @@
+@import '@finboard/tokens/dist/css/primitive.css';
+@import '@finboard/tokens/dist/css/semantic.css';
+@import '@finboard/tokens/dist/css/component.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fin-typography-font-family-body);
+  font-size: var(--fin-typography-font-size-body);
+  color: var(--fin-color-text-default);
+  background: var(--fin-color-background-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline: 2px solid var(--fin-color-interactive-focus);
+  outline-offset: 2px;
+  border-radius: var(--fin-radius-sm);
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--fin-spacing-4);
+  padding: var(--fin-spacing-2) var(--fin-spacing-4);
+  background: var(--fin-color-interactive-primary);
+  color: var(--fin-color-text-on-interactive);
+  border-radius: var(--fin-radius-md);
+  font-weight: var(--fin-font-weight-medium);
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.skip-link:focus {
+  top: var(--fin-spacing-4);
+}

@@ -5,7 +5,10 @@
   "type": "module",
   "main": "./src/index.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./dist/css/primitive.css": "./dist/css/primitive.css",
+    "./dist/css/semantic.css": "./dist/css/semantic.css",
+    "./dist/css/component.css": "./dist/css/component.css"
   },
   "scripts": {
     "build:tokens": "node style-dictionary.config.mjs"

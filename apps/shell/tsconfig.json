@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "../../dist/apps/shell"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
   "references": []
 }

@@ -156,6 +156,9 @@ importers:
         specifier: ^6
         version: 6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
+      '@finboard/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@module-federation/vite':
         specifier: ^1.15.1
         version: 1.15.1(node-fetch@2.7.0(encoding@0.1.13))(rollup@4.60.2)(typescript@5.9.3)(vite@5.4.21(@types/node@25.6.0)(lightningcss@1.32.0)(terser@5.46.2))

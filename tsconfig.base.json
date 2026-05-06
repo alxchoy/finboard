@@ -21,6 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "@finboard/ui": ["packages/ui/src/index.ts"],
+      "@finboard/ui/styles": ["packages/ui/src/styles/global.css"],
       "@finboard/tokens": ["packages/tokens/src/index.ts"],
       "@finboard/state": ["packages/state/src/index.ts"],
       "@finboard/utils": ["packages/utils/src/index.ts"],
