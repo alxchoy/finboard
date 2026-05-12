@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@finboard/ui": "workspace:*",
     "react": "^18",
     "react-dom": "^18"
   },
