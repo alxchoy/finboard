@@ -1,6 +1,9 @@
-import '@finboard/ui/styles';
 import { StrictMode } from 'react';
+
 import { createRoot } from 'react-dom/client';
+
+import '@finboard/ui/styles';
+
 import App from './App';
 
 const root = document.getElementById('root');

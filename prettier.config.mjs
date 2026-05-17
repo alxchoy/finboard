@@ -6,4 +6,8 @@ export default {
   tabWidth: 2,
   bracketSameLine: false,
   arrowParens: 'always',
+  plugins: ['@trivago/prettier-plugin-sort-imports'],
+  importOrder: ['^react$', '^react-dom', '<THIRD_PARTY_MODULES>', '^@finboard/(.*)$', '^[./]'],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
 };

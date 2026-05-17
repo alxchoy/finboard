@@ -1,6 +1,6 @@
 import { federation } from '@module-federation/vite';
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   root: __dirname,
@@ -25,6 +25,29 @@ export default defineConfig({
       dts: false,
     }),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov', 'html'],
+      exclude: [
+        '**/*.stories.*',
+        '**/*.spec.*',
+        '**/*.test.*',
+        '**/index.ts',
+        '**/test-setup.ts',
+        '**/declarations.d.ts',
+      ],
+      thresholds: {
+        branches: 80,
+        functions: 80,
+        lines: 80,
+        statements: 80,
+      },
+    },
+  },
   optimizeDeps: {
     exclude: ['react', 'react-dom'],
   },
