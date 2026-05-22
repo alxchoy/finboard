@@ -13,12 +13,13 @@
     "dev:portfolio": "nx serve @finboard/portfolio",
     "dev:analytics": "nx serve @finboard/analytics",
     "dev:market": "nx serve @finboard/market",
+    "test": "nx run-many --target=test --all",
+    "test:ui": "nx test @finboard/ui",
     "lint": "",
     "format": "",
     "typecheck": "",
     "build": "",
     "preview": "",
-    "test": "",
     "prepare": "husky"
   },
   "devDependencies": {
